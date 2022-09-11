@@ -17,22 +17,16 @@
 				<img
 					src="../../public/logo.png"
 					alt="My personal logo, a backwards crecent moon with wings"
-					width="100px"
-					height="100px"
 				/>
 				<p>Rhylei Tremlett</p>
 			</div>
-			<button id="navbar-menu-button">
-				<img
-					class="menu-icon"
-					src="../../public/bars-solid.svg"
-					alt="Menu icon"
-				/>
+			<button id="navbar-menu-button" onclick="toggleMenu()">
+				<i class="fa fa-bars fa-3x"></i>
 			</button>
-			<nav>
+			<nav id="dropdown-nav">
 				<ul>
 					<li>
-						<a href="../home-page/home.html">Home</a>
+						<a class="active" href="../home-page/home.html">Home</a>
 					</li>
 					<li>
 						<a href="../about-page/about.html">About</a>
