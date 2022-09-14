@@ -22,9 +22,10 @@ body {
 	grid-column: 1 / 2;
 	display: flex;
 	flex-direction: row;
-	/* flex-wrap: wrap; */
 	align-items: center;
+	margin: 0.5em;
 }
+
 .logo img {
 	width: 100px;
 	height: 100px;
@@ -39,7 +40,7 @@ body {
 	color: #333;
 	cursor: pointer;
 	justify-self: end;
-	/* margin: 1em; */
+	margin: 1em;
 	grid-column: 4 / 5;
 	border: thin solid #333;
 	border-radius: 15px;
@@ -56,7 +57,7 @@ body {
 #dropdown-nav {
 	grid-column: 1 / 5;
 	grid-row: 2 / 3;
-	display: block;
+	display: none;
 	align-items: center;
 	border-top: rgb(110, 110, 110) thin solid;
 }
@@ -121,12 +122,6 @@ body {
 	justify-self: stretch;
 }
 
-/* ANCHOR SIDEBAR */
-#sidebar {
-	display: none;
-	background-color: #c9c9c9;
-}
-
 /* ANCHOR FOOTER */
 
 footer {
@@ -134,6 +129,52 @@ footer {
 	background-color: #353535;
 	color: #c9c9c9;
 	padding: 1em;
+}
+
+@media screen and (max-width: 699px) {
+	/* ANCHOR SIDEBAR */
+
+	#sidebar {
+		width: 100%;
+		height: 0%;
+		background-color: #2c2c2c;
+		color: #c9c9c9;
+		position: fixed;
+		z-index: 1;
+		bottom: 0;
+		transition: 0.3s;
+	}
+	/* #sidebar-content {
+	} */
+	#sidebar-content ul {
+		list-style: none;
+	}
+	#sidebar-content li {
+		display: block;
+		padding: 1em 0.5em;
+		margin-right: 2em;
+		border-bottom: rgb(110, 110, 110) thin solid;
+	}
+	#sidebar-content li a {
+		text-decoration: none;
+		color: #c9c9c9;
+		text-align: center;
+	}
+
+	#sidebar-menu-button {
+		padding: 1em;
+		color: #333;
+		cursor: pointer;
+		margin: 1em;
+		width: 5em;
+		height: 5em;
+		border: thin solid #333;
+		border-radius: 15px;
+		position: fixed;
+		bottom: 0;
+		transition: 0.3s;
+		z-index: 1;
+	}
 }
 
 @media screen and (min-width: 700px) {
@@ -180,7 +221,28 @@ footer {
 
 	/* ANCHOR SIDEBAR */
 	#sidebar {
-		display: block;
 		background-color: #c9c9c9;
+	}
+
+	#sidebar-menu-button {
+		display: none;
+	}
+	#sidebar {
+		display: block;
+	}
+
+	#sidebar-content ul {
+		list-style: none;
+	}
+
+	#sidebar-content li {
+		display: block;
+		padding: 1em;
+		border-bottom: rgb(110, 110, 110) thin solid;
+	}
+	#sidebar-content li a {
+		text-decoration: none;
+		color: #c9c9c9;
+		text-align: center;
 	}
 }

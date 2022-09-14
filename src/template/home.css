@@ -1,0 +1,93 @@
+/* SECTION Global Properties */
+body {
+	background-color: #474747;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+/* SECTION Header */
+.logo img {
+	width: 100px;
+	height: 100px;
+}
+
+/* ANCHOR Navbar Menu Button */
+.menu-button {
+	position: fixed;
+	padding: 1em;
+	cursor: pointer;
+	border: thin solid #333;
+	border-radius: 15px;
+}
+.menu-button:hover {
+	background-color: #dadada;
+}
+.menu-button:active {
+	background-color: #c9c9c9;
+}
+
+/* ANCHOR Main Navbar */
+#main-nav {
+	background-color: #e7e7e7;
+	align-items: center;
+}
+
+/* !SECTION */
+/* !SECTION */
+
+/* SECTION Mobile Phones */
+@media screen and (max-width: 699px) {
+	body {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+	/* SECTION Header */
+	/* ANCHOR Navbar Header */
+	#main-nav {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	/* ANCHOR Navbar Menu Button */
+	#navbar-menu-button {
+		top: 1em;
+		right: 1em;
+	}
+
+	/* ANCHOR Navbar */
+	#navbar {
+		grid-row: 2 / 3;
+		/* display: none; */
+		align-items: center;
+		border-top: rgb(110, 110, 110) thin solid;
+	}
+	/* !SECTION */
+}
+/* !SECTION */
+
+/* SECTION Tablets and Laptops */
+@media screen and (min-width: 700px) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr 0.25fr 3fr 0.25fr;
+		grid-template-rows: 0.5fr 2fr 0.5fr;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
+
+	/* SECTION Header */
+	/* ANCHOR Main Navbar */
+	#main-nav {
+		grid-area: 1 / 1 / 2 / 5;
+	}
+	#navbar-menu-button {
+		display: none;
+	}
+
+	/* !SECTION */
+}
+/* !SECTION */
