@@ -22,40 +22,45 @@
 				<p>Rhylei Tremlett</p>
 			</div>
 			<button
-				id="navbar-menu-button"
+				id="menu-button-navbar"
 				class="menu-button"
 				onclick="toggleMenu()"
 			>
 				<i class="fa fa-bars fa-2x"></i>
 			</button>
-			<nav id="navbar">
-				<ul>
-					<li>
-						<a class="active" href="../home-page/home.html">Home</a>
-					</li>
-					<li>
-						<a href="../about-page/about.html">About</a>
-					</li>
-					<li>
-						<a href="../contact-page/contact.html">Contact</a>
-					</li>
-					<li>
-						<a href="../project-page/project.html">Projects</a>
-					</li>
-				</ul>
-			</nav>
 		</header>
+
+		<nav id="navbar-items">
+			<ul>
+				<li>
+					<a class="current" href="#">Home</a>
+				</li>
+				<li>
+					<a href="../about-page/about.html">About</a>
+				</li>
+				<li>
+					<a href="../contact-page/contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="../project-page/project.html">Projects</a>
+				</li>
+			</ul>
+		</nav>
 		<!-- ANCHOR Main -->
-		<!-- <main id="content-wrapper">
-			<div id="content-area">asdf</div>
+		<main id="content-area">
+			<p>asdf</p>
 		</main>
 
-		<button id="sidebar-menu-button" onclick="toggleSidebar()">
+		<button
+			id="menu-button-sidebar"
+			class="menu-button"
+			onclick="toggleSidebar()"
+		>
 			<i class="fa-solid fa-chevron-up fa-2x"></i>
-		</button> -->
+		</button>
 
 		<!-- ANCHOR Sidebar -->
-		<!-- <aside id="sidebar">
+		<aside id="sidebar">
 			<div id="sidebar-content">
 				<ul>
 					<li>
@@ -72,12 +77,12 @@
 					</li>
 				</ul>
 			</div>
-		</aside> -->
+		</aside>
 
 		<!-- ANCHOR Footer -->
-		<!-- <footer>
+		<footer>
 			<p>© 2022 Rhylei Tremlett</p>
-		</footer> -->
+		</footer>
 
 		<script src="home.js"></script>
 	</body>
