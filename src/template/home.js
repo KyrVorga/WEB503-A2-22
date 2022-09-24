@@ -4,7 +4,7 @@ function toggleNavbar() {
 	const buttonIcon = navbarButton.firstElementChild;
 
 	if (navbar.style.margin == "0px") {
-		navbar.style.margin = "-4.5em 0 0 0";
+		navbar.style.margin = "-5em 0 0 0";
 		buttonIcon.classList.replace("fa-chevron-up", "fa-chevron-down");
 	} else {
 		navbar.style.margin = "0px";
