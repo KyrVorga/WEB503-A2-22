@@ -12,11 +12,11 @@ body {
 	min-height: 100vh;
 }
 
+/* ANCHOR Header */
 .logo img {
 	width: 100px;
 	height: 100px;
 }
-
 .menu-button {
 	padding: 1em;
 	margin: 1em;
@@ -34,8 +34,6 @@ body {
 	width: 120px;
 	white-space: nowrap;
 }
-
-/* SECTION Header */
 #main-nav {
 	background-color: #e7e7e7;
 	display: flex;
@@ -51,6 +49,7 @@ body {
 	margin: 0.5em;
 }
 
+/* ANCHOR Navbar */
 #navbar-items ul {
 	padding: 0;
 	list-style: none;
@@ -65,7 +64,7 @@ body {
 #navbar-items a {
 	text-decoration: none;
 	color: #333;
-	background-color: rgb(183, 220, 241);
+	background-color: #5adbf5ad; /*0bd2e1*/
 	padding: 10px;
 	border-radius: 20px;
 	width: 70%;
@@ -113,31 +112,21 @@ footer {
 	padding: 1em;
 }
 /* !SECTION */
-/* !SECTION */
 
 /* SECTION Mobile Phones */
 @media screen and (max-width: 699px) {
-	/* body {
-	} */
-
-	/* SECTION Header */
-	/* #menu-button-navbar {
-		justify
-	} */
+	/* ANCHOR Header */
 
 	#navbar-items {
 		position: relative;
-		/* top: 2.5em; */
-		/* width: 100%; */
 		margin-top: -4.5em;
 		border-top: rgb(110, 110, 110) thin solid;
 		border-bottom: rgb(110, 110, 110) thin solid;
 		background-color: #e7e7e7;
 		transition: 0.3s;
 	}
-	/* !SECTION */
 
-	/* SECTION SIDEBAR */
+	/* ANCHOR SIDEBAR */
 	#menu-button-sidebar {
 		position: fixed;
 		bottom: 0;
@@ -170,7 +159,6 @@ footer {
 		color: #c9c9c9;
 		text-align: center;
 	}
-	/* !SECTION */
 }
 /* !SECTION */
 
@@ -184,7 +172,7 @@ footer {
 		grid-row-gap: 0px;
 	} */
 
-	/* SECTION Header */
+	/* ANCHOR Header */
 	/* #main-nav {
 		grid-area: 1 / 1 / 2 / 13;
 	} */
@@ -192,14 +180,11 @@ footer {
 	#menu-button-navbar {
 		display: none;
 	}
-	/* !SECTION */
 
-	/* SECTION SIDEBAR */
+	/* ANCHOR SIDEBAR */
 
 	#menu-button-sidebar {
 		display: none;
 	}
-
-	/* !SECTION */
 }
 /* !SECTION */

@@ -1,8 +1,14 @@
-function toggleMenu() {
-	if (document.getElementById("navbar-items").style.margin == "0px") {
-		document.getElementById("navbar-items").style.margin = "-4.5em 0 0 0";
+function toggleNavbar() {
+	const navbar = document.getElementById("navbar-items");
+	const navbarButton = document.getElementById("menu-button-navbar");
+	const buttonIcon = navbarButton.firstElementChild;
+
+	if (navbar.style.margin == "0px") {
+		navbar.style.margin = "-4.5em 0 0 0";
+		buttonIcon.classList.replace("fa-chevron-up", "fa-chevron-down");
 	} else {
-		document.getElementById("navbar-items").style.margin = "0px";
+		navbar.style.margin = "0px";
+		buttonIcon.classList.replace("fa-chevron-down", "fa-chevron-up");
 	}
 }
 
