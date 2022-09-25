@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/13d45626a9.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="home.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- ANCHOR Header -->
+		<header id="main-nav">
+			<div class="logo">
+				<img
+					src="../../public/logo.png"
+					alt="My personal logo, a backwards crecent moon with wings"
+				/>
+				<p>Rhylei Tremlett</p>
+			</div>
+			<button
+				id="menu-button-navbar"
+				class="menu-button button-light"
+				onclick="toggleNavbar()"
+			>
+				<i class="fa-solid fa-chevron-down fa-3x"></i>
+			</button>
+		</header>
+
+		<nav id="navbar-items">
+			<ul>
+				<li>
+					<a class="current" href="#">Home</a>
+				</li>
+				<li>
+					<a href="../about-page/about.html">About</a>
+				</li>
+				<li>
+					<a href="../contact-page/contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="../project-page/project.html">Projects</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- ANCHOR Main -->
+		<main id="content-area">
+			<p>asdf</p>
+		</main>
+
+		<button
+			id="menu-button-sidebar"
+			class="menu-button button-dark"
+			onclick="toggleSidebar()"
+		>
+			<i class="fa-solid fa-chevron-up fa-3x"></i>
+		</button>
+
+		<!-- ANCHOR Sidebar -->
+		<aside id="sidebar">
+			<ul>
+				<li>
+					<a href="../home-page/home.html">Home</a>
+				</li>
+				<li>
+					<a href="../about-page/about.html">About</a>
+				</li>
+				<li>
+					<a href="../contact-page/contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="../project-page/project.html">Projects</a>
+				</li>
+			</ul>
+		</aside>
+
+		<!-- ANCHOR Footer -->
+		<footer>
+			<p>© 2022 Rhylei Tremlett</p>
+		</footer>
+
+		<script src="home.js"></script>
+	</body>
+</html>
