@@ -27,3 +27,30 @@ function toggleSidebar() {
 		buttonIcon.classList.replace("fa-chevron-up", "fa-chevron-down");
 	}
 }
+
+window.addEventListener(
+	"resize",
+	function (event) {
+		if (event.target.innerWidth <= 700) {
+			const sidebarButton = document.getElementById(
+				"menu-button-sidebar"
+			);
+			const navbarButton = document.getElementById("menu-button-navbar");
+			const navButtonIcon = navbarButton.firstElementChild;
+			const sideButtonIcon = sidebarButton.firstElementChild;
+
+			const sidebar = document.getElementById("sidebar");
+			const navbar = document.getElementById("navbar-items");
+
+			sidebar.removeAttribute("style");
+			sidebarButton.removeAttribute("style");
+			navbar.removeAttribute("style");
+
+			navButtonIcon.classList.remove("fa-chevron-up", "fa-chevron-down");
+			sideButtonIcon.classList.remove("fa-chevron-up", "fa-chevron-down");
+			navButtonIcon.classList.add("fa-chevron-down");
+			sideButtonIcon.classList.add("fa-chevron-up");
+		}
+	},
+	true
+);

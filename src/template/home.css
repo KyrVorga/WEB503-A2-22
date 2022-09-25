@@ -10,9 +10,9 @@
 
 	--background: #474747;
 	--background-light: #e7e7e7;
-	--background-dark: #2c2c2c;
-	--dark-blue: #173869;
+	--background-dark: #173869;
 	--sidebar-background: #122846;
+	--footer-background: #1a283d;
 
 	--button-light: #e7e7e7;
 	--button-light-hover: #dadada;
@@ -40,13 +40,13 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: var(--dark-blue);
+	background-color: var(--background-dark);
 	font-family: var(--font-family);
 	font-size: var(--font-size);
 	color: var(--dark-blue);
 	margin: 0;
 	padding: 0;
-	min-height: 130vh;
+	min-height: 100vh;
 }
 
 /* ANCHOR Header */
@@ -146,8 +146,30 @@ body {
 #navbar-items .current:active {
 	background-color: var(--primary-active);
 }
-/* ANCHOR Body */
 
+/* ANCHOR Sidebar */
+
+#sidebar {
+	background-color: var(--sidebar-background);
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+	flex-grow: 1;
+}
+#sidebar ul {
+	list-style: none;
+	padding: 1em;
+}
+#sidebar li {
+	display: block;
+	padding: 1em 0.5em;
+	border-bottom: var(--secondary) thin solid;
+}
+#sidebar li a {
+	text-decoration: none;
+	color: #c9c9c9;
+	text-align: center;
+}
+
+/* ANCHOR Content */
 #content-area {
 	display: flex;
 	flex-direction: column;
@@ -156,19 +178,21 @@ body {
 	border-radius: 15px;
 	padding: 1em;
 	margin: 1em;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* ANCHOR Footer */
 footer {
 	text-align: center;
-	background-color: var(--background-dark);
+	background-color: var(--footer-background);
 	color: #c9c9c9;
 	padding: 1em;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 /* !SECTION */
 
 /* SECTION Mobile Phones */
-@media screen and (max-width: 699px) {
+@media only screen and (max-width: 699px) {
 	/* ANCHOR Header */
 
 	#navbar-items {
@@ -192,7 +216,6 @@ footer {
 	#sidebar {
 		width: 100%;
 		height: 0px;
-		background-color: var(--sidebar-background);
 		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 		color: #c9c9c9;
 		position: fixed;
@@ -201,56 +224,63 @@ footer {
 		transition: 0.3s;
 	}
 
-	#sidebar-content ul {
-		list-style: none;
-	}
-	#sidebar-content li {
-		display: block;
-		padding: 1em 0.5em;
-		margin-right: 2em;
-		border-bottom: var(--secondary) thin solid;
-	}
-	#sidebar-content li a {
-		text-decoration: none;
-		color: #c9c9c9;
-		text-align: center;
-	}
-
 	/* ANCHOR Content */
-	#content-area {
-		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-	}
+	/* #content-area {
+	} */
 
 	/* ANCHOR Footer */
-	footer {
-		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-	}
+	/* footer {
+	} */
 }
 /* !SECTION */
 
 /* SECTION Tablets and Laptops */
-@media screen and (min-width: 700px) {
-	/* body {
+@media only screen and (min-width: 700px) {
+	body {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: 0.5fr 2fr 0.5fr;
+		grid-template-rows: 0.5fr 5fr 0.5fr;
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
-	} */
+	}
 
 	/* ANCHOR Header */
-	/* #main-nav {
-		grid-area: 1 / 1 / 2 / 13;
-	} */
-
 	#menu-button-navbar {
 		display: none;
+	}
+	#main-nav {
+		grid-area: 1 / 1 / 2 / 13;
+		justify-content: flex-start;
+	}
+	#navbar-items {
+		grid-area: 1 / 5 / 2 / 13;
+		z-index: 3;
+		align-self: center;
 	}
 
 	/* ANCHOR Sidebar */
 
 	#menu-button-sidebar {
 		display: none;
+	}
+
+	#sidebar {
+		grid-area: 2 / 1 / 3 / 3;
+		/* background-color: var(--primary-hover); */
+	}
+	#sidebar ul {
+		position: sticky;
+		top: 1em;
+	}
+
+	/* ANCHOR Content */
+	#content-area {
+		grid-area: 2 / 3 / 3 / 13;
+	}
+
+	/* ANCHOR Footer */
+	footer {
+		grid-area: 3 / 1 / 4 / 13;
 	}
 }
 /* !SECTION */
