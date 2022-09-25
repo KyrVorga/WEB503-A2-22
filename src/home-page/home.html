@@ -8,6 +8,7 @@
 			src="https://kit.fontawesome.com/13d45626a9.js"
 			crossorigin="anonymous"
 		></script>
+		<link rel="stylesheet" href="../template/base.css" />
 		<link rel="stylesheet" href="home.css" />
 		<title>Document</title>
 	</head>
@@ -21,53 +22,57 @@
 				/>
 				<p>Rhylei Tremlett</p>
 			</div>
-			<button id="navbar-menu-button" onclick="toggleMenu()">
-				<i class="fa fa-bars fa-3x"></i>
+			<button
+				id="menu-button-navbar"
+				class="menu-button button-light"
+				onclick="toggleNavbar()"
+			>
+				<i class="fa-solid fa-chevron-down fa-3x"></i>
 			</button>
-			<nav id="dropdown-nav">
-				<ul>
-					<li>
-						<a class="active" href="../home-page/home.html">Home</a>
-					</li>
-					<li>
-						<a href="../about-page/about.html">About</a>
-					</li>
-					<li>
-						<a href="../contact-page/contact.html">Contact</a>
-					</li>
-					<li>
-						<a href="../project-page/project.html">Projects</a>
-					</li>
-				</ul>
-			</nav>
 		</header>
+
+		<nav id="navbar-items">
+			<ul>
+				<li>
+					<a class="current" href="../home-page/home.html">Home</a>
+				</li>
+				<li>
+					<a href="../contact-page/contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="../project-page/project.html">Projects</a>
+				</li>
+			</ul>
+		</nav>
 		<!-- ANCHOR Main -->
-		<main id="content-wrapper">
-			<div id="content-area">asdf</div>
+		<main id="content-area">
+			<p>asdf</p>
 		</main>
 
-		<button id="sidebar-menu-button" onclick="toggleSidebar()">
+		<button
+			id="menu-button-sidebar"
+			class="menu-button button-dark"
+			onclick="toggleSidebar()"
+		>
 			<i class="fa-solid fa-chevron-up fa-3x"></i>
 		</button>
 
 		<!-- ANCHOR Sidebar -->
 		<aside id="sidebar">
-			<div id="sidebar-content">
-				<ul>
-					<li>
-						<a href="../home-page/home.html">Home</a>
-					</li>
-					<li>
-						<a href="../about-page/about.html">About</a>
-					</li>
-					<li>
-						<a href="../contact-page/contact.html">Contact</a>
-					</li>
-					<li>
-						<a href="../project-page/project.html">Projects</a>
-					</li>
-				</ul>
-			</div>
+			<ul>
+				<li>
+					<a href="../home-page/home.html">Home</a>
+				</li>
+				<li>
+					<a href="../about-page/about.html">About</a>
+				</li>
+				<li>
+					<a href="../contact-page/contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="../project-page/project.html">Projects</a>
+				</li>
+			</ul>
 		</aside>
 
 		<!-- ANCHOR Footer -->
@@ -75,6 +80,6 @@
 			<p>© 2022 Rhylei Tremlett</p>
 		</footer>
 
-		<script src="home.js"></script>
+		<link rel="stylesheet" href="../template/base.css" />
 	</body>
 </html>
