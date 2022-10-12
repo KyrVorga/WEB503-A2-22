@@ -12,6 +12,10 @@
 	margin: 1em auto;
 }
 
+#content-area p {
+	line-height: 1.5;
+}
+
 /* !SECTION */
 
 /* SECTION Mobile Phones */
@@ -23,6 +27,7 @@
 @media only screen and (min-width: 700px) {
 	#content-area p {
 		margin: 1em 12% 0.5em 12%;
+		line-height: 1.5;
 	}
 	#content-area h2 {
 		margin: 1em 12% 0.5em 12%;
