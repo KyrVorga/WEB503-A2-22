@@ -22,8 +22,7 @@ function toggleSidebar() {
 		sidebarButton.style.bottom = "0px";
 		buttonIcon.classList.replace("fa-chevron-down", "fa-chevron-up");
 	} else {
-		sidebar.style.height = "40%";
-		sidebarButton.style.bottom = "40%";
+		navbar.removeAttribute("style");
 		buttonIcon.classList.replace("fa-chevron-up", "fa-chevron-down");
 	}
 }
