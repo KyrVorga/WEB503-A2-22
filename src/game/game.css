@@ -1,11 +1,16 @@
-/* SECTION CSS Variables */
+/* SECTION Global Properties */
 
-:root {
+#content-header {
+	font-size: 3.5em;
+	font-weight: bold;
+	text-align: center;
 }
 
-/* !SECTION */
-
-/* SECTION Global Properties */
+.content-image {
+	width: 80%;
+	border-radius: 20px;
+	margin: 1em auto;
+}
 
 /* !SECTION */
 
@@ -16,5 +21,11 @@
 
 /* SECTION Tablets and Laptops */
 @media only screen and (min-width: 700px) {
+	#content-area p {
+		margin: 1em 12% 0.5em 12%;
+	}
+	#content-area h2 {
+		margin: 1em 12% 0.5em 12%;
+	}
 }
 /* !SECTION */

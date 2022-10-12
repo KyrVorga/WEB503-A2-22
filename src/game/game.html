@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="game.css" />
 		<title>Document</title>
 	</head>
-	<body>
+	<body id="Top">
 		<!-- ANCHOR Header -->
 		<header id="main-nav">
 			<div class="logo">
@@ -34,19 +34,125 @@
 		<nav id="navbar-items">
 			<ul>
 				<li>
-					<a class="current" href="../home/home.html">Home</a>
+					<a href="../home/home.html">Home</a>
 				</li>
 				<li>
 					<a href="../software/software.html">Software Development</a>
 				</li>
 				<li>
-					<a href="../game/game.html">Game Development</a>
+					<a class="current" href="../game/game.html"
+						>Game Development</a
+					>
 				</li>
 			</ul>
 		</nav>
 		<!-- ANCHOR Main -->
 		<main id="content-area">
-			<p>Game</p>
+			<h1 id="content-header">My Game Development History</h1>
+			<p>
+				I started doing game development as a hobby while I was studying
+				at Nayland College. I've created a one fully functioning game,
+				and one prototype of a game which I hope to develop further. I
+				have had experience in Blender (one of the games uses blender
+				models I made), I made three renders and one simulation. I can
+				provide access to the two games upon request at
+				Rhylei@aureate.dev.
+			</p>
+			<br />
+			<h2 id="Shogi" class="header-topic">Shogi</h2>
+			<p>
+				The first of the games is Shogi. Shogi is effectively Japanese
+				chess, there are many variants such as the board has 81 squares
+				instead of 64, most pieces have far less movement compared to
+				chess, pieces can be promoted into a stronger piece and pieces
+				you take can be placed on the board as your own piece.
+			</p>
+			<p>
+				This game was made using Blender for creating the models, Gimp
+				for modifying textures and Unity as the game engine. The game
+				uses mostly 4k textures with the exception being the board which
+				uses an 8k texture.
+			</p>
+			<p>
+				I first built this game a few years ago but lost the project
+				files when I re-installed windows on my computer (I also lost
+				the other game, and all the CGI projects ☹).
+			</p>
+			<img
+				src="../../public/Shogi.png"
+				alt="A shogi board being viewed from above"
+				class="content-image"
+			/>
+			<p>
+				I then re-created the game again in 2022, because I regretted
+				losing the project and felt I could do a better job this time
+				around (which I did!).
+			</p>
+			<img
+				src="../../public/Shogi2.png"
+				alt="A high quality shogi board being viewed from the side immersed in white light"
+				class="content-image"
+			/>
+			<br />
+			<br />
+			<h2 id="Slime" class="header-topic">The Wandering Slime</h2>
+			<p>
+				The second game is a prototype for a game I hope to develop, it
+				is a 2D platformer where you play as a slime that jumps around.
+				In it's current state there isn't any gameplay as my primary
+				focus was on asset quality and the movement of the slime.
+			</p>
+			<video class="content-image" controls>
+				<source src="../../public/Slime.mp4" type="video/mp4" />
+			</video>
+			<p>
+				I had a lot of good feedback about this game, I was following a
+				tutorial series that creates a platformer RPG, however I hand
+				crafted every texture and animation. As with the Shogi game I
+				lost the project files when I re-installed windows on my
+				computer. I do stil have and export of the most recent version
+				of the game. I plan to re-create this game in the future,
+				starting by extracting what I can out of the export.
+			</p>
+			<br />
+			<br />
+			<h2 id="Renders" class="header-topic">Renders</h2>
+			<p>
+				I have also done these two renders, these are both done in
+				Blender, with the assets sourced from elsewhere. The first
+				render was made following a tutorial series, the second is what
+				I attempted with the skills I had learned from the first render.
+			</p>
+			<img
+				src="../../public/Sword-Cycles-Decent.png"
+				alt="A sword with glowing runes on it, in a dark cave with a god ray shining down on it"
+				class="content-image"
+			/>
+			<img
+				src="../../public/DeerFinal.png"
+				alt="An image of a deer on a large rock, with headlights being shone on it"
+				class="content-image"
+			/>
+			<br />
+			<br />
+			<h2 id="Simulation" class="header-topic">Simulation</h2>
+			<p>
+				I also made this simulation, it is a simulation of a light
+				breeze through some tall grass, it was made in Blender. The
+				breeze is extremley subtle, but I like it very much.
+				Unfortunatley the .mp4 is too dense to display on this page, so
+				I will provide it on request at Rhylei@aureate.dev
+			</p>
+			<img
+				src="../../public/GrassywTrees.png"
+				alt="A small grassy field with a few trees in the background"
+				class="content-image"
+			/>
+			<p>
+				<br />
+				<br />
+				<br />
+			</p>
 		</main>
 
 		<button
@@ -61,16 +167,19 @@
 		<aside id="sidebar">
 			<ul>
 				<li>
-					<a href="../home-page/home.html">Home</a>
+					<a href="#Top">Top</a>
 				</li>
 				<li>
-					<a href="../about-page/about.html">About</a>
+					<a href="#Shogi">Shogi</a>
 				</li>
 				<li>
-					<a href="../contact-page/contact.html">Contact</a>
+					<a href="#Slime">The Wandering Slime</a>
 				</li>
 				<li>
-					<a href="../project-page/project.html">Projects</a>
+					<a href="#Renders">Renders</a>
+				</li>
+				<li>
+					<a href="#Simulation">Simulation</a>
 				</li>
 			</ul>
 		</aside>
