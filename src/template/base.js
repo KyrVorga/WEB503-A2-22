@@ -17,13 +17,13 @@ function toggleSidebar() {
 	const sidebarButton = document.getElementById("menu-button-sidebar");
 	const buttonIcon = sidebarButton.firstElementChild;
 
-	if (sidebar.style.height == "40%") {
+	if (sidebar.style.height == "60%") {
 		sidebar.style.height = "0px";
 		sidebarButton.style.bottom = "0px";
 		buttonIcon.classList.replace("fa-chevron-down", "fa-chevron-up");
 	} else {
-		sidebar.style.height = "40%";
-		sidebarButton.style.bottom = "40%";
+		sidebar.style.height = "60%";
+		sidebarButton.style.bottom = "60%";
 		buttonIcon.classList.replace("fa-chevron-up", "fa-chevron-down");
 	}
 }
