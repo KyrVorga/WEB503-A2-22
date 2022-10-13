@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="../template/base.css" />
 		<title>Document</title>
 	</head>
-	<body>
+	<body id="Top">
 		<!-- ANCHOR Header -->
 		<header id="main-nav">
 			<div class="logo">
@@ -55,7 +55,7 @@
 				class="content-portrait"
 			/>
 			<p>
-                <h2>About Me</h2>
+                <h2 id="About">About Me</h2>
 				I am a 21 year old student studying a Bachelor of Information
 				Technology at the
 				<a href="https://www.nmit.ac.nz/"
@@ -75,7 +75,7 @@
                 </ul>
             </p>
 			<p>
-                <h2>My Goals</h2>
+                <h2 id="Goals">My Goals</h2>
 				I am studying to be a backend developer and will be majoring my
 				degree in information systems to give myself the proper
 				foundations. What I am going to be will differ from the average
@@ -85,11 +85,30 @@
 			</p>
 
             <p>
-                <h2>My Experience</h2>
-                I have been programming since taking digital technology at Nayland college. There I learned the basic fundamentals of working with any programming language. During that time I learned Python, Flask and Sqlite3.
+                <h2 id="Experience">My Experience</h2>
+                I have been programming since taking digital technology at Nayland college. 
+                There I learned the basic fundamentals of working with any programming language.
+                During that time I learned Python, Flask and SQLite3.
+                I also experienced a bit of Javascript and Ruby.
+            </p>
+            <p>
+                I have built games in unity and scripted them in C#.
+                <br>
+                I have made a few renders and a simulation in Blender.
+                <br>
+                I have made a few small programs in various programming languages.
+
             </p>
 			<p>
-                <h2>My Skills</h2>
+                <h2 id="Skills">My Skills</h2>
+                <ul>
+                    <li>I have a strong foundation in programming, algorithims and data structures, and can use a variety of programming languages.</li>
+                    <li>I am able to design and implement basic to intermediate complexity databases in MySQL, SQLite3, MSSQL and MongoDB.</li>
+                    <li>I am able to develop and document APIs using Javascript, NodeJS and Express.</li>
+                    <li>I can setup a basic windows server domain.</li>
+                    <li>I am able to come up with inovation solutions to problems and am able to work well in a team.</li>
+                    <li>I can write and present technical documentation.</li>
+                </ul>
             </p>
 		</main>
 
@@ -105,16 +124,19 @@
 		<aside id="sidebar">
 			<ul>
 				<li>
-					<a href="../home-page/home.html">Home</a>
+					<a href="#Top">Top</a>
 				</li>
 				<li>
-					<a href="../about-page/about.html">About</a>
+					<a href="#About">About Me</a>
 				</li>
 				<li>
-					<a href="../contact-page/contact.html">Contact</a>
+					<a href="#Goals">My Goals</a>
 				</li>
 				<li>
-					<a href="../project-page/project.html">Projects</a>
+					<a href="#Experience">My Experience</a>
+				</li>
+				<li>
+					<a href="#Skills">My Skills</a>
 				</li>
 			</ul>
 		</aside>
